@@ -118,10 +118,22 @@ function Templates() {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface"
             >
               <div className="relative aspect-[16/10] overflow-hidden">
+                {/* Fallback gradient behind the live preview */}
                 <div
-                  className="h-full w-full transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 h-full w-full"
                   style={{ background: t.gradient }}
                 />
+                {t.status === "available" && t.demoUrl && t.demoUrl !== "#" ? (
+                  <iframe
+                    src={t.demoUrl}
+                    title={`${t.name} live preview`}
+                    loading="lazy"
+                    tabIndex={-1}
+                    aria-hidden
+                    className="pointer-events-none absolute left-0 top-0 origin-top-left border-0"
+                    style={{ width: "250%", height: "250%", transform: "scale(0.4)" }}
+                  />
+                ) : null}
                 <span className="absolute right-3 top-3 rounded-full bg-background/80 px-3 py-1 text-xs font-medium backdrop-blur">
                   {t.price}
                 </span>
