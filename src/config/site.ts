@@ -52,14 +52,22 @@ export const templates: Template[] = [
   {
     slug: "resto",
     name: "Resto",
-    tagline: "Restaurant & food brand template",
+    tagline: "QR ordering system for restaurants & cafés",
     description:
-      "A mouth-watering template for restaurants and cafés with menu, gallery and reservations. Coming soon.",
-    price: "$39",
-    tags: ["Next.js", "Tailwind"],
+      "Scan a table's QR code, browse a cute menu, order, and watch it hit the kitchen display in real time. Full menu & table CRUD with auto-generated QR codes. One template adapts to shabu, steak, café or à la carte.",
+    price: "$59",
+    tags: ["Next.js", "Zustand", "QR", "Realtime"],
     gradient: "linear-gradient(135deg, #f59e0b, #ef4444)",
-    status: "soon",
-    highlights: ["Menu & gallery", "Reservation section", "Maps & hours"],
+    demoUrl: "https://resto-gat.vercel.app",
+    buyUrl: "#",
+    status: "available",
+    highlights: [
+      "QR scan-to-order (mobile-first)",
+      "Live kitchen display (KDS)",
+      "Menu CRUD + tables CRUD with QR codes",
+      "4 business presets: shabu / steak / café / restaurant",
+      "Deploy to Vercel in 1 click",
+    ],
   },
   {
     slug: "saas-pro",
