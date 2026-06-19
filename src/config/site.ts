@@ -38,7 +38,7 @@ export const templates: Template[] = [
     price: "$49",
     tags: ["Next.js", "Three.js", "GSAP", "Tailwind"],
     gradient: "linear-gradient(135deg, #7c5cff, #22d3ee)",
-    demoUrl: "#",
+    demoUrl: "https://studio-3d-ten.vercel.app",
     buyUrl: "#",
     status: "available",
     highlights: [
